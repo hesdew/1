@@ -106,13 +106,20 @@ footer p {
 }
 /* 기사 부분 */
 article {
-    width: 74%;
+    width: 60%;
+    order: 2;
 }
 
 /* 사이드바 */
 aside {
     width: 22%;
+    order: 3;
 }
+
+.ad {
+    order: 1;
+}
+
 .news-contents {
     display: flex;
     justify-content: space-between;
@@ -206,7 +213,6 @@ aside p {padding: 12px 10px}
 .news-contents {
     flex-direction: column;
 }
-
 article,
 aside {
     width: 100%;
@@ -230,3 +236,33 @@ aside {
     padding-top: 2px;
 }
 }
+
+/* MENU */
+.menu-content {margin-top: 20%;}
+.grid {
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin-top: 6%;
+    margin-bottom: 50px;
+}
+
+
+/*MENU
+------------------------*/
+#menu {
+    background-image: url(../2/image/menu-bg.jpg);
+    min-height: 100vh;
+}
+.menu-content {
+    max-width: 560px;
+    margin-top: 10%;
+}
+.menu-content .page-title {
+    text-align: center;
+}
+.menu-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 0;
+}
+
